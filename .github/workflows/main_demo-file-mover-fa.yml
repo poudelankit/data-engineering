@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure Functions: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python project to Azure Function App - demo-file-mover-fa
+name: Build and deploy Python project to Azure Function App - demo-file-mover-FA
 
 on:
   push:
@@ -69,7 +69,7 @@ jobs:
         uses: Azure/functions-action@v1
         id: deploy-to-function
         with:
-          app-name: 'demo-file-mover-fa'
+          app-name: 'demo-file-mover-FA'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_079C9348170B4980869FE10C964D0778 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_089A1A46001443539D88EEB17107C349 }}
